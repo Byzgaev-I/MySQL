@@ -22,7 +22,7 @@ docker volume create mysql_data
 ```
 2 **Запуск MySQL контейнера**      
 Теперь запустим контейнер MySQL версии 8, используя созданный volume для хранения данных.   
-Также установлю пароль для пользователя root как Byzgaev123.
+Также установливаю пароль для пользователя root как Byzgaev123:
 
 ```bash
 docker run --name mysql-instance -e MYSQL_ROOT_PASSWORD=Byzgaev123 -v mysql_data:/var/lib/mysql -d -p 3306:3306 mysql:8
@@ -55,7 +55,7 @@ docker exec -i mysql-instance mysql -u root -pByzgaev123 test_db < test_dump.sql
 
 5 **Подключение к MySQL и выполнение команд**  
 
-  1. Подключаюсь снова к MySQL  
+  1. Подключаюсь снова к MySQL:  
 ```bash
 docker exec -it mysql-instance mysql -u root -pByzgaev123
 ```
@@ -63,7 +63,7 @@ docker exec -it mysql-instance mysql -u root -pByzgaev123
 ```bash
 USE test_db;
 ```
-  3. Чтобы найти команду для выдачи статуса БД, использую команду 
+  3. Чтобы найти команду для выдачи статуса БД, использую команду:  
 ```bash
 status; или \s.
 ```
@@ -99,7 +99,7 @@ SHOW TABLES;
 ```bash
 CREATE USER 'test'@'localhost' IDENTIFIED BY 'test-pass';
 ```
-Задаю атрибуты имя и фамилию
+Задаю атрибуты имя и фамилию:
 ```bash
 ALTER USER 'test'@'localhost' ATTRIBUTE '{"fname":"James", "lname":"Pretty"}';
 ```
