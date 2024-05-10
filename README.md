@@ -158,19 +158,20 @@ SET profiling = 1;
 
 ### Выполнения задания 4  
 
-```
-
 # Общие настройки
+```bash
 default_storage_engine = InnoDB
-
-# Настройки InnoDB  
+```
+# Настройки InnoDB 
+```bash
 innodb_flush_log_at_trx_commit = 2 # Скорость IO важнее сохранности данных  
 innodb_file_per_table = 1 # Включить компрессию таблиц  
 innodb_log_buffer_size = 1M # Размер буффера с незакомиченными транзакциями 1 Мб  
 innodb_buffer_pool_size = 2457M # Буффер кеширования ~30% от ОЗУ, для 8 ГБ ОЗУ  
 innodb_log_file_size = 100M # Размер файла логов операций 100 Мб  
-
+```
 # Компрессия таблиц InnoDB  
+```bash
 innodb_file_format = Barracuda # Требуется для компрессии таблиц  
 ```
 
