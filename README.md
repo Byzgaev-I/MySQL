@@ -42,3 +42,36 @@ docker exec -it mysql-instance mysql -u root -pByzgaev123
 ```bash
 CREATE DATABASE test_db;
 ```
+5 **Восстановление из бэкапа**   
+
+Теперь, когда у меня есть база данных, я могу восстановиться из бэкапа:
+
+```bash
+docker exec -i mysql-instance mysql -u root -pByzgaev123 test_db < test_dump.sql
+```
+
+5 **Подключение к MySQL и выполнение команд**  
+
+  1. Подключаюсь снова к MySQL  
+```bash
+docker exec -it mysql-instance mysql -u root -pByzgaev123
+```
+  2. Переключаюсь на базу данных:  
+```bash
+USE test_db;
+```
+  3. Чтобы найти команду для выдачи статуса БД, использую команду 
+```bash
+status; или \s.
+```
+  4. Для получения списка таблиц в вашей базе данных используйте SQL-команду:  
+```bash
+SHOW TABLES;
+```
+
+
+
+
+
+
+
