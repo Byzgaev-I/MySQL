@@ -115,3 +115,5 @@ ALTER USER 'test'@'localhost' ATTRIBUTE '{"fname":"James", "lname":"Pretty"}';
 
 ### Выполнения задания 3  
 
+
+
