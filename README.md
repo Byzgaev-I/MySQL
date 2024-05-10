@@ -69,8 +69,9 @@ status; или \s.
 SHOW TABLES;
 ```
 
+![image.jpg](https://github.com/Byzgaev-I/MySQL/blob/main/1.png)
 
-
+![image.jpg](https://github.com/Byzgaev-I/MySQL/blob/main/1-1.png)
 
 
 
