@@ -24,3 +24,21 @@ docker volume create mysql_data
 ```bash
 docker run --name mysql-instance -e MYSQL_ROOT_PASSWORD=Byzgaev123 -v mysql_data:/var/lib/mysql -d -p 3306:3306 mysql:8
 ```
+3 **Скачивание бэкапа БД**     
+Скачал бэкап test_dump.sql из указанного репозитория:
+
+```bash
+wget https://raw.githubusercontent.com/netology-code/virt-homeworks/virt-11/06-db-03-mysql/test_data/test_dump.sql
+```
+
+4 **Создание базы данных**   
+Перед восстановлением из бэкапа создаю базу данных.  
+  1. Подключаюсь к MySQL контейнеру: 
+```bash
+docker exec -it mysql-instance mysql -u root -pByzgaev123
+```
+  2. В интерактивном режиме MySQL выполняю следующую команду для создания базы данных:
+
+```bash
+CREATE DATABASE test_db;
+```
