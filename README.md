@@ -115,5 +115,18 @@ ALTER USER 'test'@'localhost' ATTRIBUTE '{"fname":"James", "lname":"Pretty"}';
 
 ### Выполнения задания 3  
 
+Подключаюсь к MySQL и активирую профилирование:
+
+```bash
+SET profiling = 1;
+```
+
+![image.jpg](https://github.com/Byzgaev-I/MySQL/blob/main/3.png)
+
+![image.jpg](https://github.com/Byzgaev-I/MySQL/blob/main/3-1.png)
+
+
+
+
 
 
