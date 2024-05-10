@@ -88,7 +88,17 @@ SHOW TABLES;
 
 Используя таблицу INFORMATION_SCHEMA.USER_ATTRIBUTES, получите данные по пользователю test и приведите в ответе к задаче.
 
-----
+### Выполнения задания 2  
 
-### Выполнения задания 2
+Создаю пользователя с паролем:
+```bash
+CREATE USER 'test'@'localhost' IDENTIFIED BY 'test-pass';
+```
+Задаю атрибуты имя и фамилию
+```bash
+ALTER USER 'test'@'localhost' ATTRIBUTE '{"fname":"James", "lname":"Pretty"}';
+```
+![image.jpg](https://github.com/Byzgaev-I/MySQL/blob/main/2.png)  
+
+
 
