@@ -71,8 +71,24 @@ SHOW TABLES;
 
 ![image.jpg](https://github.com/Byzgaev-I/MySQL/blob/main/1.png)
 
-![image.jpg](https://github.com/Byzgaev-I/MySQL/blob/main/1-1.png)
+----
 
+### Задание 2
 
+Создайте пользователя test в БД c паролем test-pass, используя:  
 
+- плагин авторизации mysql_native_password
+- срок истечения пароля — 180 дней
+- количество попыток авторизации — 3
+- максимальное количество запросов в час — 100
+- аттрибуты пользователя:
+-    Фамилия "Pretty"
+-    Имя "James".
+Предоставьте привелегии пользователю test на операции SELECT базы test_db.
+
+Используя таблицу INFORMATION_SCHEMA.USER_ATTRIBUTES, получите данные по пользователю test и приведите в ответе к задаче.
+
+----
+
+### Выполнения задания 2
 
