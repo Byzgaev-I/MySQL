@@ -86,7 +86,9 @@ SHOW TABLES;
 -    Имя "James".
 Предоставьте привелегии пользователю test на операции SELECT базы test_db.
 
-Используя таблицу INFORMATION_SCHEMA.USER_ATTRIBUTES, получите данные по пользователю test и приведите в ответе к задаче.
+Используя таблицу INFORMATION_SCHEMA.USER_ATTRIBUTES, получите данные по пользователю test и приведите в ответе к задаче. 
+
+----
 
 ### Выполнения задания 2  
 
@@ -100,5 +102,16 @@ ALTER USER 'test'@'localhost' ATTRIBUTE '{"fname":"James", "lname":"Pretty"}';
 ```
 ![image.jpg](https://github.com/Byzgaev-I/MySQL/blob/main/2.png)  
 
+----
 
+### Задание 3
+Установите профилирование SET profiling = 1. Изучите вывод профилирования команд SHOW PROFILES;.    
+Исследуйте, какой engine используется в таблице БД test_db и приведите в ответе.  
+Измените engine и приведите время выполнения и запрос на изменения из профайлера в ответе:  
+на MyISAM,
+на InnoDB.
+
+----
+
+### Выполнения задания 3  
 
